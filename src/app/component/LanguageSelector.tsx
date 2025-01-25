@@ -28,11 +28,12 @@ export function LanguageSelector( {language, onSelect} ) {
         <SelectGroup>
           <SelectLabel>Languages</SelectLabel>
           {languages.map(([language, version]) => (
+          
               <SelectItem key={language} value={language}>
                 {language} - {version}
               </SelectItem>
             ))}
-          
+
         </SelectGroup>
       </SelectContent>
     </Select>

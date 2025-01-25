@@ -16,7 +16,7 @@ export const executeCode = async (language: string, sourceCode: string) => {
         },
       ],
     });
-    
+
     return {
       output: response.data.run.output,
       stderr: response.data.run.stderr,
